@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function TruckSection() {
   return (
@@ -10,7 +10,12 @@ export default function TruckSection() {
         muted
         playsInline
         className="w-full h-auto object-cover pointer-events-none"
+        preload="auto"
+        // @ts-expect-error - fetchPriority is not yet in react types for video elements
+        fetchPriority="high"
+        poster="https://69sfgmk1pv2omedb.public.blob.vercel-storage.com/new-templates/kasturi/comp1.webp"
       />
     </section>
   );
 }
+
